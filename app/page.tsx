@@ -6,7 +6,7 @@ export default function Home() {
       <header className="bg-[#0a0a0a]/95 backdrop-blur-md text-white py-5 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 border-b border-neutral-800">
         
         {/* Left Side: Custom RSJK Logo mimicking the business card */}
-        <div className="flex flex-col items-start mt-4 ml-4 mb-4  md:mb-0 cursor-pointer hover:opacity-80 transition-opacity">
+        <div className="flex flex-col items-start mt-4  mb-4  md:mb-0 cursor-pointer hover:opacity-80 transition-opacity">
           <div className="flex flex-col relative mb-1">
             <h1 
               className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.3em] leading-none" 
