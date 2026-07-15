@@ -1,158 +1,117 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-neutral-100 text-neutral-900 font-sans selection:bg-[#a8b832] selection:text-white">
+    <main className="min-h-screen bg-neutral-50 text-neutral-900 font-sans">
       
-      {/* --- START OF HEADER --- */}
-      <header className="bg-[#111111] text-white py-6 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 shadow-xl border-b border-neutral-800">
-        
-        {/* Left Side Logo */}
-        <div className="flex flex-col items-start mb-4 md:mb-0 cursor-pointer">
-          <div className="flex flex-col relative mb-1">
-            <h1 
-              className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.1em] leading-none" 
-              style={{ fontFamily: "'Ethnocentric', sans-serif" }}
-            >
-              RSJK
-            </h1>
-            <span className="text-[0.55rem] md:text-[0.65rem] tracking-[0.3em] text-white font-sans font-bold absolute -bottom-2 right-0 uppercase">
-              Group
-            </span>
-          </div>
-          
-          <p 
-            className="text-[0.65rem] md:text-[0.75rem] tracking-[0.25em] uppercase text-gray-300 mt-2"
-            style={{ fontFamily: "'Cinzel', serif", fontWeight: 600 }}
-          >
-            Architects & Designers
-          </p>
-        </div>
-
-        {/* Right Side Navigation */}
-        <nav className="flex flex-wrap justify-center gap-6 md:gap-10 text-xs md:text-sm tracking-[0.2em] uppercase items-center font-semibold">
-          <a href="#projects" className="hover:text-[#a8b832] transition-colors">Projects.</a>
-          <a href="#about" className="hover:text-[#a8b832] transition-colors">About Us.</a>
-          <a href="#services" className="hover:text-[#a8b832] transition-colors">Services.</a>
-          <a href="#contact" className="hover:text-[#a8b832] transition-colors">Contact.</a>
+      {/* NAVIGATION BAR */}
+      <header className="sticky top-0 z-50 flex justify-between items-center px-8 py-6 bg-white/90 backdrop-blur-sm border-b border-neutral-200">
+        <h1 className="text-2xl font-extrabold tracking-widest uppercase text-neutral-800">
+          RSJK Architects
+        </h1>
+        <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+          <a href="#about" className="hover:text-neutral-500 transition-colors">About</a>
+          <a href="#projects" className="hover:text-neutral-500 transition-colors">Projects</a>
+          <a href="#services" className="hover:text-neutral-500 transition-colors">Services</a>
+          <a href="#contact" className="hover:text-neutral-500 transition-colors">Contact</a>
         </nav>
-        
       </header>
-      {/* --- END OF HEADER --- */}
-      <section className="relative h-[60vh] md:h-[80vh] bg-neutral-800 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000" style={{ backgroundImage: "url('/hero-bg.jpg')" }}></div>
-        <div className="absolute inset-0 bg-black/30"></div>
-      </section>
 
-      {/* 3. PROJECTS GRID */}
-      <section id="projects" className="py-20 bg-white">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase text-center mb-16 text-neutral-800" style={{ fontFamily: "'Cinzel', serif" }}>Projects.</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 px-2 max-w-[1600px] mx-auto">
-          <div className="aspect-[4/3] bg-neutral-200 bg-cover bg-center hover:opacity-80 cursor-pointer transition-opacity" style={{ backgroundImage: "url('/project1.jpg')" }}></div>
-          <div className="aspect-[4/3] bg-neutral-300 bg-cover bg-center hover:opacity-80 cursor-pointer transition-opacity" style={{ backgroundImage: "url('/project2.jpg')" }}></div>
-          <div className="aspect-[4/3] bg-neutral-200 bg-cover bg-center hover:opacity-80 cursor-pointer transition-opacity" style={{ backgroundImage: "url('/project3.jpg')" }}></div>
-          <div className="aspect-[4/3] bg-neutral-300 bg-cover bg-center hover:opacity-80 cursor-pointer transition-opacity" style={{ backgroundImage: "url('/project4.jpg')" }}></div>
-          <div className="aspect-[4/3] bg-neutral-200 bg-cover bg-center hover:opacity-80 cursor-pointer transition-opacity" style={{ backgroundImage: "url('/project5.jpg')" }}></div>
-          <div className="aspect-[4/3] bg-neutral-300 bg-cover bg-center hover:opacity-80 cursor-pointer transition-opacity" style={{ backgroundImage: "url('/project6.jpg')" }}></div>
-        </div>
-      </section>
-
-      {/* 4. ABOUT US */}
-      <section id="about" className="py-24 px-8 bg-[#f5f5f3] text-center">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase mb-10 text-neutral-800" style={{ fontFamily: "'Cinzel', serif" }}>About Us.</h2>
-        <div className="max-w-4xl mx-auto text-neutral-600 leading-relaxed space-y-6 text-sm md:text-base font-medium">
-          <p>
-            RSJK Group works across the fields of Architecture, Interior Design, Landscape Architecture, and more. We have designed and developed works that span premium residential spaces, commercial projects, and dynamic office spaces.
+      {/* HERO SECTION */}
+      <section className="relative flex flex-col items-center justify-center min-h-[80vh] text-center px-4 bg-neutral-900 text-white">
+        <div className="absolute inset-0 bg-black/40 z-0"></div>
+        <div className="z-10 max-w-3xl">
+          <h2 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+            Designing the Future.
+          </h2>
+          <p className="text-lg md:text-xl font-light text-neutral-300 mb-10">
+            Functional, sustainable, and visually inspiring spaces.
           </p>
-          <p>
-            We operate from our studio in Hyderabad, and we have partnered with clients and organizations in and around Telangana and Andhra Pradesh to deliver exceptional design solutions.
-          </p>
+          <a href="#projects" className="px-8 py-4 bg-white text-neutral-900 font-semibold uppercase tracking-wider hover:bg-neutral-200 transition-colors">
+            View Our Work
+          </a>
         </div>
       </section>
 
-      {/* 5. SERVICES - Updated List */}
-      <section className="py-24 bg-white text-center">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase mb-16 text-neutral-800" style={{ fontFamily: "'Cinzel', serif" }}>Services.</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 px-8">
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 bg-neutral-200 flex items-center justify-center rounded-full mb-2 text-2xl">🏢</div>
-            <h3 className="font-bold tracking-widest uppercase text-xs">Architecture</h3>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 bg-neutral-200 flex items-center justify-center rounded-full mb-2 text-2xl">🛋️</div>
-            <h3 className="font-bold tracking-widest uppercase text-xs">Interiors</h3>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 bg-neutral-200 flex items-center justify-center rounded-full mb-2 text-2xl">🌴</div>
-            <h3 className="font-bold tracking-widest uppercase text-xs">Landscape</h3>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 bg-neutral-200 flex items-center justify-center rounded-full mb-2 text-2xl">🏗️</div>
-            <h3 className="font-bold tracking-widest uppercase text-xs">Design Build</h3>
-          </div>
-         
-        </div>
+      {/* ABOUT SECTION */}
+      <section id="about" className="py-24 px-8 max-w-5xl mx-auto text-center">
+        <h3 className="text-3xl font-bold mb-6 uppercase tracking-widest text-neutral-800">About RSJK</h3>
+        <div className="w-16 h-1 bg-neutral-900 mx-auto mb-8"></div>
+        <p className="text-lg leading-relaxed text-neutral-600">
+          Write your firm's history here. Tell your clients about your design philosophy, how many years of experience you have, and what makes your architecture firm unique. 
+        </p>
       </section>
 
-      {/* 6. CONTACT MAP & FORM */}
-      <section id="contact" className="py-20 bg-[#f9f9f9] border-t border-neutral-200">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase text-center mb-16 text-neutral-800" style={{ fontFamily: "'Cinzel', serif" }}>Contact.</h2>
-        
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      {/* FEATURED PROJECTS SECTION */}
+      <section id="projects" className="py-24 bg-white px-8">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-3xl font-bold mb-6 text-center uppercase tracking-widest text-neutral-800">Featured Projects</h3>
+          <div className="w-16 h-1 bg-neutral-900 mx-auto mb-16"></div>
           
-          {/* Left Side: Map and Info */}
-          <div className="flex flex-col gap-6">
-            <div className="w-full h-80 bg-neutral-300 overflow-hidden shadow-inner">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121781.57558034033!2d78.31012795!3d17.4930307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb919baf4c6537%3A0xc6c7b949c3132e03!2sKukatpally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={false} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade">
-              </iframe>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            {/* Project 1 */}
+            <div className="group cursor-pointer">
+              <div className="bg-neutral-200 h-80 w-full mb-4 flex items-center justify-center text-neutral-500 group-hover:bg-neutral-300 transition-colors">
+                [ Project Image 1 ]
+              </div>
+              <h4 className="text-xl font-semibold text-neutral-900">Modern Villa Design</h4>
+              <p className="text-neutral-500 text-sm font-medium mb-2">📍 Location: Jubilee Hills, Hyderabad</p>
+              <p className="text-neutral-600 text-sm">A 5,000 sq ft residential project focusing on natural light, open ventilation, and sustainable materials.</p>
             </div>
-            <div className="text-left text-neutral-600 text-sm leading-relaxed">
-              <p className="font-bold text-neutral-900 uppercase tracking-widest mb-2" style={{ fontFamily: "'Ethnocentric', sans-serif" }}>RSJK Group</p>
-              <p className="font-bold text-[#a8b832] mb-2 uppercase tracking-widest">Ar. Jagadeesh</p>
-              <p>Ph: +91 9392849896</p>
-              <p>Email: rsjkarchitects@gmail.com</p>
-              <p className="mt-4">
-                Flat No - 401, 4th floor, MCR Complex,<br/>
-                Sri Swamy Ayyappa Co-operative<br/>
-                Housing Society, Hyderabad-500019
-              </p>
-              <p className="mt-4 font-bold text-neutral-900">Follow us on Instagram: @rsjk_groups</p>
+            
+            {/* Project 2 */}
+            <div className="group cursor-pointer">
+              <div className="bg-neutral-200 h-80 w-full mb-4 flex items-center justify-center text-neutral-500 group-hover:bg-neutral-300 transition-colors">
+                [ Project Image 2 ]
+              </div>
+              <h4 className="text-xl font-semibold text-neutral-900">Commercial Office Tower</h4>
+              <p className="text-neutral-500 text-sm font-medium mb-2">📍 Location: HITEC City, Telangana</p>
+              <p className="text-neutral-600 text-sm">Corporate workspace designed for 500+ employees with integrated green spaces and smart glass facades.</p>
             </div>
+
+            {/* Project 3 */}
+            <div className="group cursor-pointer">
+              <div className="bg-neutral-200 h-80 w-full mb-4 flex items-center justify-center text-neutral-500 group-hover:bg-neutral-300 transition-colors">
+                [ Project Image 3 ]
+              </div>
+              <h4 className="text-xl font-semibold text-neutral-900">Luxury Interior Renovation</h4>
+              <p className="text-neutral-500 text-sm font-medium mb-2">📍 Location: Banjara Hills, Hyderabad</p>
+              <p className="text-neutral-600 text-sm">Complete interior redesign of a heritage home, blending modern aesthetics with traditional architecture.</p>
+            </div>
+
           </div>
-
-          {/* Right Side: Form */}
-          <form className="flex flex-col gap-6 bg-white p-8 shadow-sm border border-neutral-100">
-            <div>
-              <label className="block text-xs font-bold tracking-widest uppercase mb-2">Name *</label>
-              <input type="text" className="w-full border-b border-neutral-300 py-2 focus:outline-none focus:border-[#a8b832] transition-colors bg-transparent" />
-            </div>
-            <div>
-              <label className="block text-xs font-bold tracking-widest uppercase mb-2">Email *</label>
-              <input type="email" className="w-full border-b border-neutral-300 py-2 focus:outline-none focus:border-[#a8b832] transition-colors bg-transparent" />
-            </div>
-            <div>
-              <label className="block text-xs font-bold tracking-widest uppercase mb-2">Phone</label>
-              <input type="tel" className="w-full border-b border-neutral-300 py-2 focus:outline-none focus:border-[#a8b832] transition-colors bg-transparent" />
-            </div>
-            <div>
-              <label className="block text-xs font-bold tracking-widest uppercase mb-2">Message *</label>
-              <textarea rows={4} className="w-full border-b border-neutral-300 py-2 focus:outline-none focus:border-[#a8b832] transition-colors bg-transparent resize-none"></textarea>
-            </div>
-            <div className="text-right mt-4">
-              <button type="button" className="px-10 py-3 bg-[#a8b832] text-white font-bold uppercase tracking-widest hover:bg-[#8e9c26] transition-colors shadow-md">
-                Send
-              </button>
-            </div>
-          </form>
-
         </div>
       </section>
+
+      {/* SERVICES SECTION */}
+      <section id="services" className="py-24 px-8 max-w-7xl mx-auto">
+        <h3 className="text-3xl font-bold mb-6 text-center uppercase tracking-widest text-neutral-800">Our Services</h3>
+        <div className="w-16 h-1 bg-neutral-900 mx-auto mb-16"></div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <div>
+            <h4 className="text-2xl font-semibold mb-4">Architectural Design</h4>
+            <p className="text-neutral-600">Comprehensive design services from conceptualization to final blueprints, ensuring structural integrity and aesthetic brilliance.</p>
+          </div>
+          <div>
+            <h4 className="text-2xl font-semibold mb-4">Interior Design</h4>
+            <p className="text-neutral-600">Curating the inner spaces of your building to harmonize with the architectural shell, optimizing for comfort and style.</p>
+          </div>
+          <div>
+            <h4 className="text-2xl font-semibold mb-4">3D Visualization</h4>
+            <p className="text-neutral-600">High-fidelity 3D renders and walk-throughs so you can experience your project before construction even begins.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <footer id="contact" className="bg-neutral-900 text-neutral-400 py-16 px-8 text-center">
+        <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-widest">Let's Work Together</h3>
+        <p className="mb-2 text-lg">Email: info@rsjk-architects.in</p>
+        <p className="mb-8 text-lg">Phone: +91 98765 43210</p>
+        <p className="text-sm border-t border-neutral-700 pt-8 mt-8 max-w-md mx-auto">
+          &copy; {new Date().getFullYear()} RSJK Architects. All rights reserved.
+        </p>
+      </footer>
 
     </main>
   );
