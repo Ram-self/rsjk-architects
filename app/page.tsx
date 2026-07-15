@@ -10,11 +10,11 @@ export default function Home() {
           <div className="flex flex-col relative mb-1">
             <h1 
               className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.3em] leading-none" 
-              style={{ fontFamily: "Ethnocentric" }}
+              style={{ fontFamily: "'Teko',sans-serif ;" }}
             >
               RSJK
             </h1>
-            <span className="text-[0.6rem] md:text-[0.65rem] tracking-[0.3em] text-white font-sans font-bold absolute -bottom-2 md:-bottom-4 right-0 uppercase">
+            <span className="text-[0.6rem] md:text-[0.65rem] tracking-[0.3em] text-white font-sans font-bold absolute -bottom-2 md:-bottom-3 right-0 uppercase">
               Group
             </span>
           </div>
