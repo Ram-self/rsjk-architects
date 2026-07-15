@@ -1,115 +1,90 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-neutral-50 text-neutral-900 font-sans">
+    <main className="bg-[#0a0a0a] text-white min-h-screen font-sans selection:bg-white selection:text-black">
       
-      {/* NAVIGATION BAR */}
-      <header className="sticky top-0 z-50 flex justify-between items-center px-8 py-6 bg-white/90 backdrop-blur-sm border-b border-neutral-200">
-        <h1 className="text-2xl font-extrabold tracking-widest uppercase text-neutral-800">
-          RSJK Architects
-        </h1>
-        <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
-          <a href="#about" className="hover:text-neutral-500 transition-colors">About</a>
-          <a href="#projects" className="hover:text-neutral-500 transition-colors">Projects</a>
-          <a href="#services" className="hover:text-neutral-500 transition-colors">Services</a>
-          <a href="#contact" className="hover:text-neutral-500 transition-colors">Contact</a>
-        </nav>
-      </header>
+      {/* MINIMALIST NAVIGATION */}
+      <nav className="fixed w-full z-50 flex justify-between items-center px-8 md:px-16 py-8 mix-blend-difference">
+        <h1 className="text-xl font-serif tracking-[0.2em] uppercase">RSJK</h1>
+        <div className="hidden md:flex gap-10 text-xs tracking-widest uppercase">
+          <a href="#portfolio" className="hover:text-gray-400 transition-colors">Portfolio</a>
+          <a href="#about" className="hover:text-gray-400 transition-colors">Studio</a>
+          <a href="#contact" className="hover:text-gray-400 transition-colors">Contact</a>
+        </div>
+      </nav>
 
-      {/* HERO SECTION */}
-      <section className="relative flex flex-col items-center justify-center min-h-[80vh] text-center px-4 bg-neutral-900 text-white">
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
-        <div className="z-10 max-w-3xl">
-          <h2 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-            Designing the Future.
+      {/* CINEMATIC HERO SECTION */}
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+        {/* Background Image Placeholder */}
+        <div className="absolute inset-0 bg-neutral-900 bg-cover bg-center opacity-50" style={{ backgroundImage: "url('/hero.jpg')" }}></div>
+        
+        <div className="relative z-10 text-center flex flex-col items-center mt-16">
+          <h2 className="text-5xl md:text-8xl font-serif tracking-widest uppercase mb-6 font-light drop-shadow-lg">
+            RSJK <br/> Architects
           </h2>
-          <p className="text-lg md:text-xl font-light text-neutral-300 mb-10">
-            Functional, sustainable, and visually inspiring spaces.
+          <p className="text-xs md:text-sm tracking-[0.4em] uppercase text-gray-300 mb-16 drop-shadow-md">
+            Hyderabad, Telangana
           </p>
-          <a href="#projects" className="px-8 py-4 bg-white text-neutral-900 font-semibold uppercase tracking-wider hover:bg-neutral-200 transition-colors">
-            View Our Work
+          <a href="#portfolio" className="border-b border-white pb-1 text-xs tracking-[0.2em] uppercase hover:text-gray-400 hover:border-gray-400 transition-all">
+            Discover Our Work
           </a>
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
-      <section id="about" className="py-24 px-8 max-w-5xl mx-auto text-center">
-        <h3 className="text-3xl font-bold mb-6 uppercase tracking-widest text-neutral-800">About RSJK</h3>
-        <div className="w-16 h-1 bg-neutral-900 mx-auto mb-8"></div>
-        <p className="text-lg leading-relaxed text-neutral-600">
-          Write your firm's history here. Tell your clients about your design philosophy, how many years of experience you have, and what makes your architecture firm unique. 
-        </p>
-      </section>
+      {/* GALLERY PORTFOLIO SECTION */}
+      <section id="portfolio" className="py-32 px-4 md:px-16 max-w-[1400px] mx-auto">
+        <div className="text-center mb-24">
+          <h3 className="text-2xl font-serif tracking-widest uppercase mb-4">Selected Works</h3>
+          <div className="w-px h-12 bg-white mx-auto"></div>
+        </div>
 
-      {/* FEATURED PROJECTS SECTION */}
-      <section id="projects" className="py-24 bg-white px-8">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl font-bold mb-6 text-center uppercase tracking-widest text-neutral-800">Featured Projects</h3>
-          <div className="w-16 h-1 bg-neutral-900 mx-auto mb-16"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* Project 1 */}
-            <div className="group cursor-pointer">
-              <div className="bg-neutral-200 h-80 w-full mb-4 flex items-center justify-center text-neutral-500 group-hover:bg-neutral-300 transition-colors">
-                [ Project Image 1 ]
-              </div>
-              <h4 className="text-xl font-semibold text-neutral-900">Modern Villa Design</h4>
-              <p className="text-neutral-500 text-sm font-medium mb-2">📍 Location: Jubilee Hills, Hyderabad</p>
-              <p className="text-neutral-600 text-sm">A 5,000 sq ft residential project focusing on natural light, open ventilation, and sustainable materials.</p>
+          {/* Project 1 */}
+          <div className="group relative aspect-square md:aspect-[4/5] overflow-hidden bg-neutral-800 cursor-pointer">
+            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style={{ backgroundImage: "url('/project1.jpg')" }}></div>
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-500"></div>
+            <div className="absolute bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h4 className="text-2xl font-serif tracking-wider uppercase mb-2">The Glass Pavilion</h4>
+              <p className="text-xs tracking-widest uppercase text-gray-300">Jubilee Hills</p>
             </div>
-            
-            {/* Project 2 */}
-            <div className="group cursor-pointer">
-              <div className="bg-neutral-200 h-80 w-full mb-4 flex items-center justify-center text-neutral-500 group-hover:bg-neutral-300 transition-colors">
-                [ Project Image 2 ]
-              </div>
-              <h4 className="text-xl font-semibold text-neutral-900">Commercial Office Tower</h4>
-              <p className="text-neutral-500 text-sm font-medium mb-2">📍 Location: HITEC City, Telangana</p>
-              <p className="text-neutral-600 text-sm">Corporate workspace designed for 500+ employees with integrated green spaces and smart glass facades.</p>
-            </div>
-
-            {/* Project 3 */}
-            <div className="group cursor-pointer">
-              <div className="bg-neutral-200 h-80 w-full mb-4 flex items-center justify-center text-neutral-500 group-hover:bg-neutral-300 transition-colors">
-                [ Project Image 3 ]
-              </div>
-              <h4 className="text-xl font-semibold text-neutral-900">Luxury Interior Renovation</h4>
-              <p className="text-neutral-500 text-sm font-medium mb-2">📍 Location: Banjara Hills, Hyderabad</p>
-              <p className="text-neutral-600 text-sm">Complete interior redesign of a heritage home, blending modern aesthetics with traditional architecture.</p>
-            </div>
-
           </div>
+
+          {/* Project 2 (Offset to look artistic) */}
+          <div className="group relative aspect-square md:aspect-[4/5] overflow-hidden bg-neutral-800 cursor-pointer mt-0 md:mt-32">
+            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style={{ backgroundImage: "url('/project2.jpg')" }}></div>
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-500"></div>
+            <div className="absolute bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h4 className="text-2xl font-serif tracking-wider uppercase mb-2">Urban Eco-Tower</h4>
+              <p className="text-xs tracking-widest uppercase text-gray-300">HITEC City</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
-      <section id="services" className="py-24 px-8 max-w-7xl mx-auto">
-        <h3 className="text-3xl font-bold mb-6 text-center uppercase tracking-widest text-neutral-800">Our Services</h3>
-        <div className="w-16 h-1 bg-neutral-900 mx-auto mb-16"></div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <div>
-            <h4 className="text-2xl font-semibold mb-4">Architectural Design</h4>
-            <p className="text-neutral-600">Comprehensive design services from conceptualization to final blueprints, ensuring structural integrity and aesthetic brilliance.</p>
-          </div>
-          <div>
-            <h4 className="text-2xl font-semibold mb-4">Interior Design</h4>
-            <p className="text-neutral-600">Curating the inner spaces of your building to harmonize with the architectural shell, optimizing for comfort and style.</p>
-          </div>
-          <div>
-            <h4 className="text-2xl font-semibold mb-4">3D Visualization</h4>
-            <p className="text-neutral-600">High-fidelity 3D renders and walk-throughs so you can experience your project before construction even begins.</p>
-          </div>
+      {/* MINIMALIST ABOUT SECTION */}
+      <section id="about" className="py-32 bg-white text-black px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-xl font-serif tracking-widest uppercase mb-12 text-gray-500">The Studio</h3>
+          <p className="text-2xl md:text-4xl font-light leading-relaxed mb-12 font-serif">
+            We shape spaces that shape lives. Blending timeless aesthetics with modern functionality, our architecture stands as a testament to precision, light, and materiality.
+          </p>
+          <a href="#contact" className="border-b border-black pb-1 text-xs tracking-[0.2em] uppercase hover:text-gray-500 hover:border-gray-500 transition-all">
+            Get in Touch
+          </a>
         </div>
       </section>
 
-      {/* CONTACT SECTION */}
-      <footer id="contact" className="bg-neutral-900 text-neutral-400 py-16 px-8 text-center">
-        <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-widest">Let's Work Together</h3>
-        <p className="mb-2 text-lg">Email: info@rsjk-architects.in</p>
-        <p className="mb-8 text-lg">Phone: +91 98765 43210</p>
-        <p className="text-sm border-t border-neutral-700 pt-8 mt-8 max-w-md mx-auto">
-          &copy; {new Date().getFullYear()} RSJK Architects. All rights reserved.
+      {/* FOOTER / CONTACT */}
+      <footer id="contact" className="py-24 px-8 text-center border-t border-white/10 bg-[#0a0a0a]">
+        <h3 className="text-2xl font-serif tracking-widest uppercase mb-12">RSJK Architects</h3>
+        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 text-xs tracking-widest uppercase text-gray-400 mb-16">
+          <p>Kukatpally, Hyderabad</p>
+          <p>info@rsjk-architects.in</p>
+          <p>+91 98765 43210</p>
+        </div>
+        <p className="text-[10px] tracking-widest text-gray-600 uppercase">
+          &copy; {new Date().getFullYear()} RSJK Architects. All Rights Reserved.
         </p>
       </footer>
 
