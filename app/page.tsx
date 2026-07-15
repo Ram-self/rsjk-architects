@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex flex-col relative mb-1">
             <h1 
               className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.1em] leading-none" 
-              style={{ fontFamily: "'Teko',sans-serif " }}
+              style={{ fontFamily: "'Eurostilevold bold Extended',sans-serif " }}
             >
               RSJK
             </h1>
