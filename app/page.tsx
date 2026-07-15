@@ -68,7 +68,7 @@ export default function Home() {
             RSJK Group works across the fields of Architecture, Interior Design, Landscape Architecture, and more. We have designed and developed works that span premium residential spaces, commercial projects, and dynamic office spaces.
           </p>
           <p>
-            We operate from our studio in Hyderabad, and we've partnered with clients and organizations in and around Telangana and Andhra Pradesh to deliver exceptional design solutions.
+            We operate from our studio in Hyderabad, and we have partnered with clients and organizations in and around Telangana and Andhra Pradesh to deliver exceptional design solutions.
           </p>
         </div>
       </section>
