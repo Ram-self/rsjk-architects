@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col items-start mb-4 md:mb-0 cursor-pointer hover:opacity-80 transition-opacity">
           <div className="flex flex-col relative mb-1">
             <h1 
-              className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.1em] leading-none" 
+              className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.2em] leading-none" 
               style={{ fontFamily: "'Ethnocentric', sans-serif" }}
             >
               RSJK
@@ -116,7 +116,7 @@ export default function Home() {
               <p className="mt-4">
                 Flat No - 401, 4th floor, MCR Complex,<br/>
                 Sri Swamy Ayyappa Co-operative<br/>
-                Housing Society, Hyderabad - 500019
+                Housing Society, Hyderabad - 500081
               </p>
               <p className="mt-4">Phone: +91 8686638289 / +91 9392849896</p>
               <p>Email: rsjkarchitects@gmail.com</p>
