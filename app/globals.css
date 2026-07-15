@@ -1,14 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-@font-face {
-  font-family: 'Ethnocentric';
-  src: url('https://fonts.cdnfonts.com/s/14899/EthnocentricRg-Regular.woff') format('woff');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
