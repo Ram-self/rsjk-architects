@@ -29,10 +29,10 @@ export default function Home() {
 
         {/* Right Navigation */}
         <nav className="flex flex-wrap justify-center gap-6 md:gap-10 text-xs md:text-sm tracking-[0.2em] uppercase items-center font-semibold text-gray-300">
-          <a href="#projects" className="hover:text-[#a8b832] transition-colors">Projects.</a>
-          <a href="#about" className="hover:text-[#a8b832] transition-colors">About Us.</a>
-          <a href="#services" className="hover:text-[#a8b832] transition-colors">Services.</a>
-          <a href="#contact" className="hover:text-[#a8b832] transition-colors">Contact.</a>
+          <a href="#projects" className="hover:text-[#a8b832] transition-colors">Projects</a>
+          <a href="#about" className="hover:text-[#a8b832] transition-colors">About Us</a>
+          <a href="#services" className="hover:text-[#a8b832] transition-colors">Services</a>
+          <a href="#contact" className="hover:text-[#a8b832] transition-colors">Contact</a>
         </nav>
       </header>
 
@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* 3. PROJECTS GRID */}
       <section id="projects" className="py-24 px-4 bg-[#111111]">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase text-center mb-16 text-white" style={{ fontFamily: "'Cinzel', serif" }}>Projects.</h2>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase text-center mb-16 text-white" style={{ fontFamily: "'Cinzel', serif" }}>Projects</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[1600px] mx-auto">
           <div className="aspect-[4/3] bg-neutral-800 bg-cover bg-center hover:opacity-75 cursor-pointer transition-all duration-500 border border-neutral-800" style={{ backgroundImage: "url('/project1.jpg')" }}></div>
@@ -58,7 +58,7 @@ export default function Home() {
 
       {/* 4. ABOUT US */}
       <section id="about" className="py-24 px-8 bg-[#1a1a1a] text-center border-y border-neutral-800">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase mb-10 text-white" style={{ fontFamily: "'Cinzel', serif" }}>About Us.</h2>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase mb-10 text-white" style={{ fontFamily: "'Cinzel', serif" }}>About Us</h2>
         <div className="max-w-4xl mx-auto text-gray-300 leading-relaxed space-y-6 text-sm md:text-base font-medium">
           <p>
             RSJK Group works across the fields of Architecture, Interior Design, Landscape Architecture, and more. We have designed and developed works that span premium residential spaces, commercial projects, and dynamic office spaces.
@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* 5. SERVICES */}
       <section id="services" className="py-24 bg-[#111111] text-center">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase mb-16 text-white" style={{ fontFamily: "'Cinzel', serif" }}>Services.</h2>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase mb-16 text-white" style={{ fontFamily: "'Cinzel', serif" }}>Services</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 px-8">
           <div className="flex flex-col items-center gap-6 group cursor-pointer">
             <div className="w-20 h-20 bg-neutral-900 border border-neutral-700 flex items-center justify-center rounded-sm group-hover:border-[#a8b832] transition-colors text-3xl">🏢</div>
@@ -94,7 +94,7 @@ export default function Home() {
 
       {/* 6. CONTACT MAP & FORM */}
       <section id="contact" className="py-24 bg-[#0a0a0a] border-t border-neutral-800">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase text-center mb-16 text-white" style={{ fontFamily: "'Cinzel', serif" }}>Contact.</h2>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase text-center mb-16 text-white" style={{ fontFamily: "'Cinzel', serif" }}>Contact</h2>
         
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           
