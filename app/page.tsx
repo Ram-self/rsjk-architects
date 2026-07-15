@@ -101,7 +101,7 @@ export default function Home() {
           <div className="flex flex-col gap-8">
             <div className="w-full h-80 bg-neutral-900 overflow-hidden border border-neutral-800">
               <iframe 
-                src=https://maps.app.goo.gl/VB7JRaDRd9L6c4wz5
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2014432521287!2d78.38938497462836!3d17.450069900997338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9166ed4f7941%3A0x25da1e982f78a2cd!2sMCR%20complex!5e0!3m2!1sen!2sin!4v1784141815164!5m2!1sen!2sin"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
