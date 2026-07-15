@@ -9,8 +9,8 @@ export default function Home() {
         <div className="flex flex-col items-start mt-4  mb-4  md:mb-0 cursor-pointer hover:opacity-80 transition-opacity">
           <div className="flex flex-col relative mb-1">
             <h1 
-              className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.1em] leading-none" 
-              style={{ fontFamily: "'Eurostilevold bold Extended',sans-serif " }}
+              className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-normal leading-none" 
+              style={{ fontFamily: "'Ethnocentric',sans-serif " }}
             >
               RSJK
             </h1>
