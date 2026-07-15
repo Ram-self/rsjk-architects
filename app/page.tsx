@@ -2,45 +2,41 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-100 text-neutral-900 font-sans selection:bg-[#a8b832] selection:text-white">
       
-      {/* 1. DARK HEADER WITH LEFT LOGO & DROPDOWN */}
-      <header className="bg-[#1e1e1e] text-white py-6 px-8 flex justify-between items-center sticky top-0 z-50 shadow-md">
+      {/* --- START OF HEADER --- */}
+      <header className="bg-[#111111] text-white py-6 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 shadow-xl border-b border-neutral-800">
         
         {/* Left Side Logo */}
-        <div className="flex flex-col">
-          {/* Ethnocentric Font applied here */}
-          <h1 
-            className="text-2xl md:text-4xl text-[#a8b832] mb-1 flex items-baseline gap-3 uppercase" 
-            style={{ fontFamily: "'Ethnocentric', sans-serif" }}
-          >
-            RSJK <span className="text-sm md:text-lg tracking-widest text-white font-sans font-bold">Group</span>
-          </h1>
-          {/* Cinzel Font applied here */}
+        <div className="flex flex-col items-start mb-4 md:mb-0 cursor-pointer">
+          <div className="flex flex-col relative mb-1">
+            <h1 
+              className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-[0.1em] leading-none" 
+              style={{ fontFamily: "'Ethnocentric', sans-serif" }}
+            >
+              RSJK
+            </h1>
+            <span className="text-[0.55rem] md:text-[0.65rem] tracking-[0.3em] text-white font-sans font-bold absolute -bottom-2 right-0 uppercase">
+              Group
+            </span>
+          </div>
+          
           <p 
-            className="text-[0.65rem] md:text-[0.8rem] tracking-[0.25em] uppercase text-gray-300 mt-1"
+            className="text-[0.65rem] md:text-[0.75rem] tracking-[0.25em] uppercase text-gray-300 mt-2"
             style={{ fontFamily: "'Cinzel', serif", fontWeight: 600 }}
           >
             Architects & Designers
           </p>
         </div>
 
-        {/* Right Navigation */}
-        <nav className="flex justify-end gap-6 md:gap-10 text-xs md:text-sm tracking-widest uppercase items-center relative">
-          
-          <div className="group relative py-4 hidden md:block">
-            <span className="cursor-pointer hover:text-[#a8b832] transition-colors">Projects.</span>
-            <div className="absolute top-full right-0 hidden group-hover:flex flex-col bg-[#1e1e1e] text-white p-4 gap-4 w-56 shadow-xl border-t-2 border-[#a8b832]">
-              <a href="#projects" className="hover:text-[#a8b832] transition-colors">Architecture</a>
-              <a href="#projects" className="hover:text-[#a8b832] transition-colors">Interiors</a>
-              <a href="#projects" className="hover:text-[#a8b832] transition-colors">Landscape</a>
-            </div>
-          </div>
-          
-          <a href="#about" className="hover:text-[#a8b832] transition-colors hidden md:block">About Us.</a>
+        {/* Right Side Navigation */}
+        <nav className="flex flex-wrap justify-center gap-6 md:gap-10 text-xs md:text-sm tracking-[0.2em] uppercase items-center font-semibold">
+          <a href="#projects" className="hover:text-[#a8b832] transition-colors">Projects.</a>
+          <a href="#about" className="hover:text-[#a8b832] transition-colors">About Us.</a>
+          <a href="#services" className="hover:text-[#a8b832] transition-colors">Services.</a>
           <a href="#contact" className="hover:text-[#a8b832] transition-colors">Contact.</a>
         </nav>
+        
       </header>
-
-      {/* 2. HERO IMAGE SLIDER */}
+      {/* --- END OF HEADER --- */}
       <section className="relative h-[60vh] md:h-[80vh] bg-neutral-800 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000" style={{ backgroundImage: "url('/hero-bg.jpg')" }}></div>
         <div className="absolute inset-0 bg-black/30"></div>
@@ -93,10 +89,7 @@ export default function Home() {
             <div className="w-16 h-16 bg-neutral-200 flex items-center justify-center rounded-full mb-2 text-2xl">🏗️</div>
             <h3 className="font-bold tracking-widest uppercase text-xs">Design Build</h3>
           </div>
-          <div className="flex flex-col items-center gap-4 col-span-2 md:col-span-1">
-            <div className="w-16 h-16 bg-neutral-200 flex items-center justify-center rounded-full mb-2 text-2xl">📐</div>
-            <h3 className="font-bold tracking-widest uppercase text-xs">Parametrics</h3>
-          </div>
+         
         </div>
       </section>
 
