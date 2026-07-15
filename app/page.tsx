@@ -112,7 +112,6 @@ export default function Home() {
             </div>
             <div className="text-left text-gray-400 text-sm leading-relaxed tracking-wide space-y-2">
               <p className="font-bold text-white uppercase tracking-widest mb-1 text-lg" style={{ fontFamily: "'Ethnocentric', sans-serif" }}>RSJK Group</p>
-              <p className="font-bold text-[#a8b832] uppercase tracking-widest">Ar. Jagadeesh</p>
               <p className="mt-4">
                 Flat No - 401, 4th floor, MCR Complex,<br/>
                 Sri Swamy Ayyappa Co-operative<br/>
