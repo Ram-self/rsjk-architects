@@ -27,12 +27,39 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Right Navigation */}
-        <nav className="flex flex-wrap justify-center gap-6 md:gap-10 text-xs md:text-sm tracking-[0.2em] uppercase items-center font-semibold text-gray-300">
-          <a href="#projects" className="hover:text-[#a8b832] transition-colors">Projects</a>
-          <a href="#about" className="hover:text-[#a8b832] transition-colors">About Us</a>
-          <a href="#services" className="hover:text-[#a8b832] transition-colors">Services</a>
-          <a href="#contact" className="hover:text-[#a8b832] transition-colors">Contact</a>
+       {/* Right Navigation (With Dropdowns) */}
+        <nav className="flex flex-wrap justify-center gap-6 md:gap-10 text-xs tracking-[0.2em] uppercase items-center font-semibold text-gray-300 z-50">
+          
+          {/* PROJECTS DROPDOWN */}
+          <div className="relative group py-4 cursor-pointer">
+            <a href="#projects" className="hover:text-[#a8b832] transition-colors flex items-center gap-1">
+              Projects <span className="text-[8px] opacity-50 mb-0.5">▼</span>
+            </a>
+            {/* Hidden Menu Box */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 w-64 bg-[#0a0a0a]/95 backdrop-blur-md border border-neutral-800 rounded-sm flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl">
+              <a href="#projects" className="px-4 py-4 hover:text-[#a8b832] hover:bg-neutral-900 transition-colors text-center border-b border-neutral-800">Architecture</a>
+              <a href="#projects" className="px-4 py-4 hover:text-[#a8b832] hover:bg-neutral-900 transition-colors text-center border-b border-neutral-800">Residential Interiors</a>
+              <a href="#projects" className="px-4 py-4 hover:text-[#a8b832] hover:bg-neutral-900 transition-colors text-center border-b border-neutral-800">Commercial Interiors</a>
+              <a href="#projects" className="px-4 py-4 hover:text-[#a8b832] hover:bg-neutral-900 transition-colors text-center">RSJK Portfolio</a>
+            </div>
+          </div>
+
+          {/* ABOUT US DROPDOWN */}
+          <div className="relative group py-4 cursor-pointer">
+            <a href="#about" className="hover:text-[#a8b832] transition-colors flex items-center gap-1">
+              About Us <span className="text-[8px] opacity-50 mb-0.5">▼</span>
+            </a>
+            {/* Hidden Menu Box */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-[#0a0a0a]/95 backdrop-blur-md border border-neutral-800 rounded-sm flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl">
+              <a href="#about" className="px-4 py-4 hover:text-[#a8b832] hover:bg-neutral-900 transition-colors text-center border-b border-neutral-800">About Us</a>
+              <a href="#team" className="px-4 py-4 hover:text-[#a8b832] hover:bg-neutral-900 transition-colors text-center border-b border-neutral-800">Our Team</a>
+              <a href="#clients" className="px-4 py-4 hover:text-[#a8b832] hover:bg-neutral-900 transition-colors text-center">Our Clients</a>
+            </div>
+          </div>
+
+          {/* STANDARD LINKS */}
+          <a href="#services" className="hover:text-[#a8b832] transition-colors py-4">Services</a>
+          <a href="#contact" className="hover:text-[#a8b832] transition-colors py-4">Contact</a>
         </nav>
       </header>
 
