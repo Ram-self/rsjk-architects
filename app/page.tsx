@@ -6,11 +6,11 @@ export default function Home() {
       <header className="bg-[#0a0a0a]/95 backdrop-blur-md text-white py-5 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 border-b border-neutral-800">
         
         {/* Left Side: Custom RSJK Logo mimicking the business card */}
-        <div className="flex flex-col items-start mt-4  mb-4  md:mb-0 cursor-pointer hover:opacity-80 transition-opacity">
+        <div className="flex flex-col items-start mt-4 mb-4 md:mb-0 cursor-pointer hover:opacity-80 transition-opacity">
           <div className="flex flex-col relative mb-1">
             <h1 
               className="text-4xl md:text-5xl text-[#a8b832] uppercase tracking-normal leading-none" 
-              style={{ fontFamily: "'Michroma',sans-serif " }}
+              style={{ fontFamily: "'Michroma', sans-serif" }}
             >
               RSJK
             </h1>
@@ -27,7 +27,7 @@ export default function Home() {
           </p>
         </div>
 
-       {/* Right Navigation (With Dropdowns) */}
+        {/* Right Navigation (With Dropdowns) */}
         <nav className="flex flex-wrap justify-center gap-6 md:gap-10 text-xs tracking-[0.2em] uppercase items-center font-semibold text-gray-300 z-50">
           
           {/* PROJECTS DROPDOWN */}
@@ -129,16 +129,17 @@ export default function Home() {
             <div className="w-full h-80 bg-neutral-900 overflow-hidden border border-neutral-800">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2014432521287!2d78.38938497462836!3d17.450069900997338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9166ed4f7941%3A0x25da1e982f78a2cd!2sMCR%20complex!5e0!3m2!1sen!2sin!4v1784141815164!5m2!1sen!2sin"
-                width="600" 
-                height="450" 
+                width="100%" 
+                height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen={false} 
                 loading="lazy" 
-                referrerPolicy="strict-origin-when-cross-origin">
+                referrerPolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
             <div className="text-left text-gray-400 text-sm leading-relaxed tracking-wide space-y-2">
               <p className="font-bold text-white uppercase tracking-widest mb-1 text-lg" style={{ fontFamily: "'Ethnocentric', sans-serif" }}>RSJK Group</p>
+              <p className="font-bold text-[#a8b832] uppercase tracking-widest">Ar. Jagadeesh</p>
               <p className="mt-4">
                 Flat No - 401, 4th floor, MCR Complex,<br/>
                 Sri Swamy Ayyappa Co-operative<br/>
